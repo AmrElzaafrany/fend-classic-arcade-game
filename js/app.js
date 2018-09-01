@@ -76,17 +76,14 @@ class Player {
         ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
     }
     handleInput(keyPress) {
-        if (keyPress == 'left') {
-            player.x -= player.speed;
-        }
-        if (keyPress == 'up') {
-            player.y -= player.speed - 20;
-        }
-        if (keyPress == 'right') {
-            player.x += player.speed;
-        }
-        if (keyPress == 'down') {
-            player.y += player.speed - 20;
+        if (keyPress === 'left' && this.x > 33) {
+            this.x -= 100;
+        } else if (keyPress === 'up' && this.y > 18) {
+            this.y -= 80;
+        } else if (keyPress === 'right' && this.x < 400) {
+            this.x += 100
+        } else if (keyPress === 'down' && this.y < 380) {
+            this.y += 80
         }
     }
 }
@@ -95,10 +92,10 @@ class Player {
 // Now instantiate your objects.
 // Place all enemy objects in an array called allEnemies
 // Place the player object in a variable called player
-var allEnemies = [];
+var allEnemies = [new Enemy(), new Enemy(), new Enemy(), new Enemy(), new Enemy()];
 
 // Position "y" where the enemies will are created
-var enemyPosition = [40, 100, 200];
+var enemyPosition = [50, 140, 220];
 var player = new Player(200, 300, 50);
 var enemy;
 
