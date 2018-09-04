@@ -2,9 +2,12 @@ frontend-nanodegree-arcade-game
 ===============================
 ## About
 
-frogger arcade game.
+Frogger Arcade Game
 
-(https://github.com/AmrElzaafrany/fend-classic-arcade-game/blob/master/images/arcade-game.PNG)
+#### Live Version
+https://amrelzaafrany.github.io/fend-classic-arcade-game/
+
+![image](https://github.com/AmrElzaafrany/fend-classic-arcade-game/blob/master/images/arcade-game.PNG)
 
 ## how to play 
 
